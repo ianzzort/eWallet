@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
+    <title>eWallet</title>
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <div class="espacio"></div>
+            <li>
+                <a href="">
+                    <i class="fad fa-home"></i>
+                    <span class="nav-title">
+                        eWallet
+                    </span>
+                </a>
+            </li>
+            <br><br><br>
+
+            <li class="subnav">
+                <a href="./panel.html">
+                   <i class="fad fa-credit-card"></i>
+                    <span class="nav-text">
+                        Cuentas
+                    </span>
+                </a>
+            </li>
+
+            <li class="subnav">
+                <a href="./ingresos.html">
+                    <i class="fad fa-dollar-sign"></i>
+                    <span class="nav-text">
+                        Ingresos
+                    </span>
+                </a>   
+            </li>
+
+            <li class="subnav">
+                <a href="./Gastos.html">
+                   <i class="fad fa-paper-plane"></i>
+                    <span class="nav-text">
+                        Gastos
+                    </span>
+                </a>  
+            </li>
+
+            <br><br>
+            <li class="subnav">
+                <a href="./Config.html">
+                   <i class="fad fa-tools"></i>
+                    <span class="nav-text">
+                        Configuraciones
+                    </span>
+                </a>  
+            </li>
+
+            <li class="subnav">
+                <a href="./Estadistics.html">
+                   <i class="fad fa-signal-alt-2"></i>
+                    <span class="nav-text">
+                        Estadisticas
+                    </span>
+                </a>  
+            </li>
+
+    </nav>
+
+    <section>
+        <div class="profile">
+            <p><i class="fad fa-user"></i>Arnoldo</p>
+        </div>
+        <div class="balance byellow">
+            <p>Balance:</p>
+        </div>
+        <form action="">
+            <h1>Ingresos</h1>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fecha</th>
+                    <th>Motivo</th>
+                    <th>Monto</th>
+                    <th>Cuenta</th>
+                </tr>
+            </thead>
+            <br>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>15/06/2020</th>
+                    <th>----</th>
+                    <th>$40.00</th>
+                    <th>Master Card</th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info central">
+            <a class="btn btn-block btn-green btningreso">Agregar</a>
+           </div>
+    </section>
+
+
+    <div class="modalAddAccount">
+
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="square">
+            <form action="">
+                <h1>Agregar gasto</h1>
+
+            <label for="">Fecha</label>
+            <div class="input-group">
+                <span class="fa fa-clock" aria-hidden="true"></span>
+                <input type="date" name="usuario" placeholder="Fecha" required=""> 
+            </div>
+            <div class="input-group">
+                <span class="fa fa-list" aria-hidden="true"></span>
+                <input type="text"  name="usuario" placeholder="Motivo" required=""> 
+            </div>
+            <div class="input-group">
+                <span class="fa fa-dollar-sign" aria-hidden="true"></span>
+                <input type="number" name="usuario" placeholder="Monto" required=""> 
+            </div>
+            <div class="input-group">
+                <span class="fab fa-slack-hash" aria-hidden="true"></span>
+                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required=""> 
+            </div>
+            <a href="./ingresos.html" class="btn btn-block" type="submit">Confirmar</a > 
+            </form>
+        </div>
+
+    </div>
+
+    
+
+<script src="../js/animations2.js"></script>
+</body>
+</html>

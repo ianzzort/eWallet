@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
+    <title>eWallet</title>
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <div class="espacio"></div>
+            <li>
+                <a href="">
+                    <i class="fad fa-home"></i>
+                    <span class="nav-title">
+                        eWallet
+                    </span>
+                </a>
+            </li>
+            <br><br><br>
+
+            <li class="subnav">
+                <a href="./panel.html">
+                   <i class="fad fa-credit-card"></i>
+                    <span class="nav-text">
+                        Cuentas
+                    </span>
+                </a>
+            </li>
+
+            <li class="subnav">
+                <a href="./ingresos.html">
+                    <i class="fad fa-dollar-sign"></i>
+                    <span class="nav-text">
+                        Ingresos
+                    </span>
+                </a>   
+            </li>
+
+            <li class="subnav">
+                <a href="./Gastos.html">
+                   <i class="fad fa-paper-plane"></i>
+                    <span class="nav-text">
+                        Gastos
+                    </span>
+                </a>  
+            </li>
+
+            <br><br>
+            <li class="subnav">
+                <a href="./Config.html">
+                   <i class="fad fa-tools"></i>
+                    <span class="nav-text">
+                        Configuraciones
+                    </span>
+                </a>  
+            </li>
+
+            <li class="subnav">
+                <a href="./Estadistics.html">
+                   <i class="fad fa-signal-alt-2"></i>
+                    <span class="nav-text">
+                        Estadisticas
+                    </span>
+                </a>  
+            </li>
+    </nav>
+
+    <section>
+        <div class="profile">
+            <p><i class="fad fa-user"></i>Arnoldo</p>
+        </div>
+
+        <div class="balance">
+            <p>Balance:</p>
+        </div>
+
+        <div class="info">
+            <form action="">
+                <h1>Configuraciones generales</h1>
+    
+            <label for="">Tipo de pago</label>
+            <div class="input-group">
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Efectivo</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2" name="Ben"  />
+                          <p class="select-box__input-text">Cuenta de ahorro</p>
+                        </div>
+                        <i class="fas fa-chevron-down"></i></div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">Efectivo</label></li>
+                        <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Cuenta de ahorro</label></li>
+                    </ul>
+                  </div> 
+            </div>
+        </form>
+        <form action="">
+            <label for="">Tarjeta de credito</label>
+            <div class="input-group">
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Mastercard</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="2" name="Ben"  />
+                          <p class="select-box__input-text">VISA</p>
+                        </div>
+                        <i class="fas fa-chevron-down"></i></div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Mastercard</label></li>
+                        <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">VISA</label></li>
+                    </ul>
+                  </div> 
+            </div>
+            <a href="./Config.html" class="btn btn-block" type="submit">Confirmar</a > 
+            </form>
+        </div>
+        
+    </section>
+
+    <div class="modalAddAccount">
+
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="square">
+            <form action="">
+                <h1>Agregar gasto</h1>
+
+            <label for="">Fecha</label>
+            <div class="input-group">
+                <span class="fa fa-clock" aria-hidden="true"></span>
+                <input type="date" name="usuario" placeholder="Fecha" required=""> 
+            </div>
+            <label for="">Motivo</label>
+            <div class="input-group">
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Pago de celular</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2" name="Ben"  />
+                          <p class="select-box__input-text">Pago de luz</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3" name="Ben"  />
+                          <p class="select-box__input-text">Pago de agua</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4" name="Ben"  />
+                          <p class="select-box__input-text">Pago de casa</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="5" name="Ben"  />
+                          <p class="select-box__input-text">Pago de cable</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="5" value="6" name="Ben"  />
+                          <p class="select-box__input-text">Pago de internet</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="6" value="7" name="Ben"  />
+                          <p class="select-box__input-text">Pago de educación</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="7" value="8" name="Ben"  />
+                          <p class="select-box__input-text">Supermercado</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="8" value="9" name="Ben"  />
+                          <p class="select-box__input-text">Cine</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="9" value="6" name="Ben"  />
+                          <p class="select-box__input-text">Ropa</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="10" value="7" name="Ben"  />
+                          <p class="select-box__input-text">Restaurante</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="11" value="8" name="Ben"  />
+                          <p class="select-box__input-text">Mascota</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="12" value="9" name="Ben"  />
+                          <p class="select-box__input-text">Gasolina</p>
+                        </div>
+            
+                        <i class="fas fa-chevron-down"></i></div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">Pago de celular</label></li>
+                        <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Pago de luz</label></li>
+                        <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Pago de agua</label></li>
+                        <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">Pago de casa</label></li>
+                        <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">Pago de cable</label></li>
+                        <li><label class="select-box__option" for="5" aria-hidden="aria-hidden">Pago de internet</label></li>
+                        <li><label class="select-box__option" for="6" aria-hidden="aria-hidden">Pago de educacion</label></li>
+                        <li><label class="select-box__option" for="7" aria-hidden="aria-hidden">Supermercado</label></li>
+                        <li><label class="select-box__option" for="8" aria-hidden="aria-hidden">Cine</label></li>
+                        <li><label class="select-box__option" for="9" aria-hidden="aria-hidden">Ropa</label></li>
+                        <li><label class="select-box__option" for="10" aria-hidden="aria-hidden">Restaurante</label></li>
+                        <li><label class="select-box__option" for="11" aria-hidden="aria-hidden">Mascota</label></li>
+                        <li><label class="select-box__option" for="12" aria-hidden="aria-hidden">Gasolina</label></li>
+            
+                    </ul>
+                  </div> 
+                  <div class="new ">+</div>
+            </div>
+
+            <div class="input-group">
+                <span class="fa fa-dollar-sign" aria-hidden="true"></span>
+                <input type="number" name="usuario" placeholder="Monto" required=""> 
+            </div>
+            <div class="input-group">
+                <span class="fab fa-slack-hash" aria-hidden="true"></span>
+                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required=""> 
+            </div>
+            <a href="./Gastos.html" class="btn btn-block" type="submit">Confirmar</a > 
+            </form>
+        </div>
+    </div>
+
+        <div class="modalMotivo">
+
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+    
+            <div class="square">
+                <form action="">
+                <h1>Agregar Motivo</h1>
+                <div class="input-group">
+                    <span class="fa fa-clipboard-list" aria-hidden="true"></span>
+                    <input type="text"  name="usuario" placeholder="Motivo" required=""> 
+                </div>
+                <a href="./Gastos.html" class="btn btn-block" type="submit">Confirmar</a > 
+                </form>
+            </div>
+
+            </div>
+    
+
+<script src="../js/animations3.js"></script>
+</body>
+</html>
