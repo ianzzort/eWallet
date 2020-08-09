@@ -819,4 +819,11 @@ section .center {
 		width: 90%;
 		float: left;
 	}
+
+	.formulario {
+		flex-basis: 100%;
+		padding: 1em 2em;
+	}
+	
+
 }
