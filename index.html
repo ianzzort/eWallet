@@ -24,32 +24,32 @@
 			<div class="formulario">
 				<h2>Entra a tu cuenta.</h2>
 				<p>Ingresa tus datos para acceder.</p>
-				<form  method="POST" name="login">
+				<form action="./user/index.html" method="POST" name="frmlogin" id="frmlogin">
+					<!--#-->
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" id="Nombres" name="usuario" placeholder="Nombres" required=""> 
+						<input type="text" name="usuario" placeholder="Nombres" required="" id="txtNombre"> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" name="usuario" id="Apellidos" placeholder="Apellidos" required=""> 
+						<input type="text" name="usuario" placeholder="Apellidos" required="" id="txtApellido"> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
-						<input type="Password" name="password" id="Password" placeholder="Contraseña..." required="">
+						<input type="Password" name="password" placeholder="Contraseña..." required="">
 					</div> 		
 					<div class="input-group">
 						<span class="fa fa-envelope" aria-hidden="true"></span>
 						<input type="email" name="usuario" placeholder="Correo" required="" id="txtCorreo"> 
-						<input type="email" name="usuario" id="Email" placeholder="Correo" required=""> 
 					</div>		
 					<div class="input-group">
 						<span class="fa fa-map-marker-alt" aria-hidden="true"></span>
-						<input type="text" name="usuario" id="Direccion" placeholder="Dirección" required=""> 
+						<input type="text" name="usuario" placeholder="Dirección" required=""> 
 					</div>	
 					<label for="">¿Cuál es tu comida favorita?</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
-						<input type="text" name="usuario" id="Pregunta" placeholder="..." required=""> 
+						<input type="text" name="usuario" placeholder="..." required=""> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-address-card" aria-hidden="true"></span>
@@ -63,29 +63,20 @@
 						<span class="fa fa-phone" aria-hidden="true"></span>
 						<input type="text" name="usuario" placeholder="Número de telefono" required="" id="txtTelefono"> 
 					</div>	
-					<div class="input-group">
-						<span class="fa fa-address-card" aria-hidden="true"></span>
-						<input type="number" name="usuario" id="Nit" placeholder="Nit" required=""> 
-					</div>	
-					<div class="input-group">
-						<span class="fa fa-phone" aria-hidden="true"></span>
-						<input type="number" name="usuario" id="Telefono" placeholder="Número de telefono" required=""> 
-					</div>	
 					<label for="">Fecha de cumpleaños</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
-						<input type="date" name="usuario" id="fechaNac"required=""> 
+						<input type="date" name="usuario" placeholder="Número de telefono" required=""> 
 					</div>	
-						<input type="submit" name="btnSend" class="btn btn-danger btn-block" id="btnSend" value="Entrar">             
+						<input type="submit" name="btnSend" class="btn btn-danger btn-block" id="btnSend" value="Entrar">         
 				</form>
 			</div>
 		</div>
-	</div>
-</div>
 
+	</div>
+
+</div>
+</body>
 <script src="./js/scripts.js"></script>
 <script type="text/javascript" src="js/validacionLogin.js"></script>
-
-</body>
-
 </html>
