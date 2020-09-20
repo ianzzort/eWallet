@@ -24,56 +24,56 @@
 			<div class="formulario">
 				<h2>Entra a tu cuenta.</h2>
 				<p>Ingresa tus datos para acceder.</p>
-				<form action="" method="POST" name="login">
+				<form  method="POST" name="login">
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="Nombres" required=""> 
+						<input type="text" id="Nombres" name="usuario" placeholder="Nombres" required=""> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="Apellidos" required=""> 
+						<input type="text" name="usuario" id="Apellidos" placeholder="Apellidos" required=""> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
-						<input type="Password" name="password" placeholder="Contraseña..." required="">
+						<input type="Password" name="password" id="Password" placeholder="Contraseña..." required="">
 					</div> 		
 					<div class="input-group">
 						<span class="fa fa-envelope" aria-hidden="true"></span>
-						<input type="email" name="usuario" placeholder="Correo" required=""> 
+						<input type="email" name="usuario" id="Email" placeholder="Correo" required=""> 
 					</div>		
 					<div class="input-group">
 						<span class="fa fa-map-marker-alt" aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="Dirección" required=""> 
+						<input type="text" name="usuario" id="Direccion" placeholder="Dirección" required=""> 
 					</div>	
 					<label for="">¿Cuál es tu comida favorita?</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="..." required=""> 
+						<input type="text" name="usuario" id="Pregunta" placeholder="..." required=""> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-address-card" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Dui" required=""> 
+						<input type="number" name="usuario" id="Dui" placeholder="Dui" required=""> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-address-card" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Nit" required=""> 
+						<input type="number" name="usuario" id="Nit" placeholder="Nit" required=""> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-phone" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Número de telefono" required=""> 
+						<input type="number" name="usuario" id="Telefono" placeholder="Número de telefono" required=""> 
 					</div>	
 					<label for="">Fecha de cumpleaños</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
-						<input type="date" name="usuario" placeholder="Número de telefono" required=""> 
+						<input type="date" name="usuario" id="fechaNac"required=""> 
 					</div>	
-						<a href="./user/index.html" class="btn btn-danger btn-block" type="submit">Entrar</a >             
+						<button type="submit" class="btn btn-danger btn-block btnEntrar" ">Entrar</button>             
 				</form>
 			</div>
 		</div>
-
 	</div>
-
 </div>
+
+<script src="./js/scripts.js"></script>
 </body>
 </html>
