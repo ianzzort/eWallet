@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
     <title>eWallet</title>
 </head>
 <body>
@@ -122,13 +122,13 @@
         </div>
 
         <div class="square">
-            <form action="">
+            <form action="" id="frmdatos" name="frmdatos" method="POST">
                 <h1>Agregar gasto</h1>
 
             <label for="">Fecha</label>
             <div class="input-group">
                 <span class="fa fa-clock" aria-hidden="true"></span>
-                <input type="date" name="usuario" placeholder="Fecha" required=""> 
+                <input type="date" name="usuario" placeholder="Fecha" required="" id="txtFecha"> 
             </div>
             <label for="">Motivo</label>
             <div class="input-group">
@@ -197,13 +197,13 @@
 
             <div class="input-group">
                 <span class="fa fa-dollar-sign" aria-hidden="true"></span>
-                <input type="number" name="usuario" placeholder="Monto" required=""> 
+                <input type="text" name="usuario" placeholder="Monto" required="" id="txtCantidad"> 
             </div>
             <div class="input-group">
                 <span class="fab fa-slack-hash" aria-hidden="true"></span>
-                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required=""> 
+                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required=""  id="txtCuenta"> 
             </div>
-            <a href="./Gastos.html" class="btn btn-block" type="submit">Confirmar</a > 
+            <input type="submit" name="btnSend" id="btnSend" class="btn btn-block" value="Confirmar">
             </form>
         </div>
     </div>
@@ -230,4 +230,5 @@
 
 <script src="../js/animations3.js"></script>
 </body>
+<script type="text/javascript" src="../js/validarMovimientos.js"></script>
 </html>

@@ -115,13 +115,13 @@
         </div>
 
         <div class="square">
-            <form action="">
+            <form action="" id="frmdatos" name="frmdatos" method="POST">
                 <h1>Agregar gasto</h1>
 
             <label for="">Fecha</label>
             <div class="input-group">
                 <span class="fa fa-clock" aria-hidden="true"></span>
-                <input type="date" name="usuario" placeholder="Fecha" required=""> 
+                <input type="date" name="usuario" placeholder="Fecha" required="" id="txtFecha"> 
             </div>
             <div class="input-group">
                 <span class="fa fa-list" aria-hidden="true"></span>
@@ -129,13 +129,13 @@
             </div>
             <div class="input-group">
                 <span class="fa fa-dollar-sign" aria-hidden="true"></span>
-                <input type="number" name="usuario" placeholder="Monto" required=""> 
+                <input type="text" name="usuario" placeholder="Monto" required="" id="txtCantidad"> 
             </div>
             <div class="input-group">
                 <span class="fab fa-slack-hash" aria-hidden="true"></span>
-                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required=""> 
+                <input type="text"  name="usuario" placeholder="cuenta donde se almacenó" required="" id="txtCuenta"> 
             </div>
-            <a href="./ingresos.html" class="btn btn-block" type="submit">Confirmar</a > 
+            <input type="submit" name="btnSend" id="btnSend" class="btn btn-block" value="Confirmar">
             </form>
         </div>
 
@@ -145,4 +145,5 @@
 
 <script src="../js/animations2.js"></script>
 </body>
+<script type="text/javascript" src="../js/validarMovimientos.js"></script>
 </html>

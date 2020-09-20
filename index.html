@@ -24,14 +24,15 @@
 			<div class="formulario">
 				<h2>Entra a tu cuenta.</h2>
 				<p>Ingresa tus datos para acceder.</p>
-				<form action="" method="POST" name="login">
+				<form action="./user/index.html" method="POST" name="frmlogin" id="frmlogin">
+					<!--#-->
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="Nombres" required=""> 
+						<input type="text" name="usuario" placeholder="Nombres" required="" id="txtNombre"> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
-						<input type="text" name="usuario" placeholder="Apellidos" required=""> 
+						<input type="text" name="usuario" placeholder="Apellidos" required="" id="txtApellido"> 
 					</div>
 					<div class="input-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
@@ -39,7 +40,7 @@
 					</div> 		
 					<div class="input-group">
 						<span class="fa fa-envelope" aria-hidden="true"></span>
-						<input type="email" name="usuario" placeholder="Correo" required=""> 
+						<input type="email" name="usuario" placeholder="Correo" required="" id="txtCorreo"> 
 					</div>		
 					<div class="input-group">
 						<span class="fa fa-map-marker-alt" aria-hidden="true"></span>
@@ -52,22 +53,22 @@
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-address-card" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Dui" required=""> 
+						<input type="text" name="usuario" placeholder="Dui" required="" id="txtDui"> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-address-card" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Nit" required=""> 
+						<input type="text" name="usuario" placeholder="Nit" required="" id="txtNit"> 
 					</div>	
 					<div class="input-group">
 						<span class="fa fa-phone" aria-hidden="true"></span>
-						<input type="number" name="usuario" placeholder="Número de telefono" required=""> 
+						<input type="text" name="usuario" placeholder="Número de telefono" required="" id="txtTelefono"> 
 					</div>	
 					<label for="">Fecha de cumpleaños</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
 						<input type="date" name="usuario" placeholder="Número de telefono" required=""> 
 					</div>	
-						<a href="./user/index.html" class="btn btn-danger btn-block" type="submit">Entrar</a >             
+						<input type="submit" name="btnSend" class="btn btn-danger btn-block" id="btnSend" value="Entrar">         
 				</form>
 			</div>
 		</div>
@@ -75,5 +76,11 @@
 	</div>
 
 </div>
+
+<script src="./js/scripts.js"></script>
+<script type="text/javascript" src="js/validacionLogin.js"></script>
+
+
 </body>
+
 </html>

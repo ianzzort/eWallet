@@ -660,9 +660,23 @@ section .center {
 }
 
 @media screen and (max-width:800px) {
-
 	.letras {
 		display: none;
+	}
+	
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.contenedor {
+		margin-top: 50px;
+		width: 100%;
+	}
+
+	.contenedor form {
+		width: 70%;
 	}
 
 	section {
@@ -738,8 +752,8 @@ section .center {
 
 	
 	table {
-		width: 100%;
-		margin: auto;
+	width: 100%;
+	margin: auto;
 	   background: white;
 	   border: rgb(211, 209, 209) solid 1px;
 	   padding: 1% 2%;
@@ -781,14 +795,14 @@ section .center {
 		width: 60%;
 	}
 
-	.square form h1 {
+	.square label {
 		font-size: 20px;
 	}
 
 	.close {
 		position: absolute;
-		top: 20px;
-		left: 10px;
+		top: 50px;
+		left: 20px;
 		color: white;
 	}
 	.close i {
@@ -797,33 +811,3 @@ section .center {
 	}
 }
 
-
-/** Responsive **/
-
-@media screen and (max-width: 800px){
-
-	.container {
-		width: 95%;
-		margin: auto;
-	}
-
-	input[type="text"],input[type="password"] {
-		font-size: 14px;
-	}
-	.input-group span.fa {
-		font-size: 16px;
-		padding: 13px 0px;
-	}
-
-	.contenedor {
-		width: 90%;
-		float: left;
-	}
-
-	.formulario {
-		flex-basis: 100%;
-		padding: 1em 2em;
-	}
-	
-
-}

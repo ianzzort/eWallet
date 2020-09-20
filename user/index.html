@@ -13,13 +13,13 @@
   
     <section>
         <div class="contenedor">
-            <form action="" method="POST" name="login">
+            <form action="./panel.html" method="POST" name="frmdatos" id="frmdatos">
                 <h1>Primeros Pasos</h1>
                 <p>Rellene la informacion solitada:</p>
                 <label for="">Efectivo</label>
                 <div class="input-group">
                     <span class="fa fa-dollar-sign" aria-hidden="true"></span>
-                    <input type="number" name="usuario" placeholder="_ _._ _" required=""> 
+                    <input type="text" name="usuario" placeholder="_ _._ _" required="" id="txtCantidad"> 
                 </div>
                 <label for="">Cuentas</label>
                 <div class="input-group">
@@ -29,14 +29,14 @@
                 <div class="input-group">
                     <span class="fab fa-slack-hash" aria-hidden="true"></span>
                     <input type="number" name="usuario" placeholder="# de Cuenta
-                    " required=""> 
+                    " required="" id="txtCuenta"> 
                 </div>
-                    <a href="./panel.html" class="btn btn-danger btn-block" type="submit">Terminar</a >             
+                <input type="submit" name="btnSend" id="btnSend" class="btn btn-danger btn-block" value="Terminar">            
             </form>
         </div>
     </section>
-    <br><br><br><br>
 
 </div>
 </body>
+<script type="text/javascript" src="../js/validarCuenta.js"></script>
 </html>

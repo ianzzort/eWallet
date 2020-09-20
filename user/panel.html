@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
     <title>eWallet</title>
 </head>
 <body>
@@ -137,21 +137,21 @@
         </div>
 
         <div class="square">
-            <form action="">
+            <form action="" id="frmdatos" name="frmdatos" method="POST">
                 <h1>Agregar cuenta</h1>
             <div class="input-group">
                 <span class="fa fa-university" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="Banco" required=""> 
+                <input type="text" name="usuario" placeholder="Banco" required=""> 
             </div>
             <div class="input-group">
                 <span class="fab fa-slack-hash" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="# de cuenta" required=""> 
+                <input type="number" name="usuario" placeholder="# de cuenta" required="" id="txtCuenta"> 
             </div>
             <div class="input-group">
                 <span class="fa fa-dollar-sign" aria-hidden="true"></span>
-                <input type="number" name="usuario" placeholder="Saldo actual" required=""> 
+                <input type="text" name="usuario" placeholder="Saldo actual" required="" id="txtCantidad"> 
             </div>
-            <a href="./panel.html" class="btn btn-block" type="submit">Confirmar</a > 
+            <input type="submit" name="btnSend" id="btnSend" class="btn btn-block" value="Confirmar"> 
             </form>
         </div>
 
@@ -165,25 +165,25 @@
         </div>
 
         <div class="square">
-            <form action="">
+            <form action="" id="frmTarjeta" name="frmTarjeta" method="POST">
                 <h1>Agregar Trajeta de Credito</h1>
             <div class="input-group">
                 <span class="fa fa-university" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="Banco" required=""> 
+                <input type="number" name="usuario" placeholder="Banco" required=""> 
             </div>
             <div class="input-group">
                 <span class="fa fa-credit-card" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="# de tarjeta" required=""> 
+                <input type="text" name="usuario" placeholder="# de tarjeta" required="" id="txtTarjeta"> 
             </div>
             <div class="input-group">
                 <span class="fa fa-dollar-sign" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="Saldo actual" required=""> 
+                <input type="text" name="usuario" placeholder="Saldo actual" required="" id="txtSaldo"> 
             </div>
             <div class="input-group">
                 <span class="fa fa-percentage" aria-hidden="true"></span>
-                <input type="number" readonly name="usuario" placeholder="Interés anual" required=""> 
+                <input type="text" name="usuario" placeholder="Interés anual" required="" id="txtInteres"> 
             </div>
-            <a href="./panel.html" class="btn btn-block" type="submit">Confirmar</a > 
+            <input type="submit" name="btnConfirm" id="btnConfirm" class="btn btn-block" value="Confirmar">
             </form>
         </div>
     </div>
@@ -192,4 +192,6 @@
 
 <script src="../js/animations.js"></script>
 </body>
+<script type="text/javascript" src="../js/validarCuenta.js"></script>
+<script type="text/javascript" src="../js/validarTarjeta.js"></script>
 </html>
