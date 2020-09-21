@@ -1,14 +1,14 @@
-const Nombres = document.querySelector('#Nombres');
-const Apellidos = document.querySelector('#Apellidos');
-const Email = document.querySelector('#Nombres');
+const Nombres = document.querySelector('#txtNombre');
+const Apellidos = document.querySelector('#txtApellido');
+const Email = document.querySelector('#txtCorreo');
 const Password = document.querySelector('#Password');
 const Direccion = document.querySelector('#Direccion');
 const Pregunta = document.querySelector('#Pregunta');
-const Dui = document.querySelector('#Dui');
-const Nit = document.querySelector('#Nit');
-const Telefono = document.querySelector('#Telefono');
+const Dui = document.querySelector('#txtDui');
+const Nit = document.querySelector('#txtNit');
+const Telefono = document.querySelector('#txtTelefono');
 const fechaNac = document.querySelector('#fechaNac');
-const btnEntrar = document.querySelector('.btnEntrar');
+const btnEntrar = document.querySelector('#btnSend');
 
 class Usuario {
     constructor (nombres, apellidos, contra, correo, ubicacion, DUI, NIT, telefono, fechaNac) {
@@ -24,7 +24,7 @@ class Usuario {
     }
 }
 
-const form = document.querySelector('form');
+const form = document.querySelector('#frmlogin');
 const inputs = document.querySelectorAll('form input');
 let usuario;
 
