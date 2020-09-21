@@ -6,9 +6,9 @@ function iniciar(){
 		btnenviar.addEventListener("click", function(){
 			//Validaciones (Función)
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
-				form.action = "./";
+				location.replace("./");
 			}else{
-				form.action = "./panel.html";
+				location.replace("./panel.html");
 			}
 		}, false);
 	}
@@ -16,9 +16,9 @@ function iniciar(){
 		btnenviar.attachEvent("onclick", function(){
 			//Validaciones (Función)
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
-				form.action = "./";
+				location.replace("./");
 			}else{
-				form.action = "./panel.html";
+				location.replace("./panel.html");
 			}
 		});
 	}
