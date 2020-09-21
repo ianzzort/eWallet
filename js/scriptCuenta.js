@@ -1,6 +1,6 @@
 txtCantidad = document.querySelector('#txtCantidad');
 txtBanco = document.querySelector('#txtBanco');
-txtNumeroDeCuenta = document.querySelector('#txtNumeroDeCuenta');
+txtCuenta = document.querySelector('#txtCuenta');
 btnSend = document.querySelector('#btnSend');
 
 class Cuenta {

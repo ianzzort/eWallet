@@ -38,7 +38,7 @@ btnEntrar.addEventListener('click', ()=> {
         if (input.value.length > 0) {i++}
     });
 
-    if(i===10){
+    if(i===){
         usuario = new Usuario(
             Nombres.value, 
             Apellidos.value,
