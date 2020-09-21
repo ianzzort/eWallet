@@ -8,9 +8,9 @@ function iniciar(){
 			if (validarNombre(document.frmlogin.txtNombre.value) == 0 || validarNombre(document.frmlogin.txtApellido.value) == 0 ||
 				validarCorreo(document.frmlogin.txtCorreo.value) == 0 || validarDui(document.frmlogin.txtDui.value) == 0 ||
 				validarNit(document.frmlogin.txtNit.value) == 0 || validarTelefono(document.frmlogin.txtTelefono.value) == 0 ) {
-				form.action = "#";
+				location.replace("./");
 			}else{
-				form.action = "./user/index.html";
+				location.replace("./user/index.html");
 			}
 		}, false);
 	}
@@ -22,7 +22,7 @@ function iniciar(){
 				validarNit(document.frmlogin.txtNit.value) == 0 || validarTelefono(document.frmlogin.txtTelefono.value) == 0 ) {
 				form.action = "#";
 			}else{
-				form.action = "./user/index.html";
+				location.replace("./");
 			}
 		});
 	}
