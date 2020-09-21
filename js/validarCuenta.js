@@ -6,9 +6,9 @@ function iniciar(){
 		btnenviar.addEventListener("click", function(){
 			//Validaciones (Función)
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
-				form.action = "#";
+				form.action = "./";
 			}else{
-				form.action = "https://rouxlss.github.io/eWallet/user/panel.html";
+				form.action = "./panel.html";
 			}
 		}, false);
 	}
@@ -16,9 +16,9 @@ function iniciar(){
 		btnenviar.attachEvent("onclick", function(){
 			//Validaciones (Función)
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
-				form.action = "#";
+				form.action = "./";
 			}else{
-				form.action = "https://rouxlss.github.io/eWallet/user/panel.html";
+				form.action = "./panel.html";
 			}
 		});
 	}
