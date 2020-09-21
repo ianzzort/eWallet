@@ -8,7 +8,7 @@ function iniciar(){
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
 				form.action = "#";
 			}else{
-				form.action = "./panel.html";
+				form.action = "https://rouxlss.github.io/eWallet/user/panel.html";
 			}
 		}, false);
 	}
@@ -18,7 +18,7 @@ function iniciar(){
 			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
 				form.action = "#";
 			}else{
-				form.action = "./panel.html";
+				form.action = "https://rouxlss.github.io/eWallet/user/panel.html";
 			}
 		});
 	}
