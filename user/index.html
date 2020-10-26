@@ -15,7 +15,8 @@
         <div class="contenedor">
             <form action="./panel.html" method="POST" name="frmdatos" id="frmdatos">
                 <h1>Primeros Pasos</h1>
-                <p>Rellene la informacion solitada:</p>
+                <p id="mostrar">Rellene la informacion solitada:</p>
+                <div id="error"></div>
                 <label for="">Efectivo</label>
                 <div class="input-group">
                     <span class="fa fa-dollar-sign" aria-hidden="true"></span>
@@ -24,14 +25,13 @@
                 <label for="">Cuentas</label>
                 <div class="input-group">
                     <span class="fa fa-university" aria-hidden="true"></span>
-                    <input type="text" name="usuario" placeholder="Banco" required=""> 
+                    <input type="text" name="usuario" placeholder="Banco" required="" id="txtBanco"> 
                 </div>
                 <div class="input-group">
                     <span class="fab fa-slack-hash" aria-hidden="true"></span>
-                    <input type="number" name="usuario" placeholder="# de Cuenta
-                    " required="" id="txtCuenta"> 
+                    <input type="number" name="usuario" placeholder="# de Cuenta" required="" id="txtCuenta"> 
                 </div>
-                <input type="submit" name="btnSend" id="btnSend" class="btn btn-danger btn-block" value="Terminar">            
+                <a href="#error" name="btnSend" id="btnSend" class="btn btn-danger btn-block text-center">Terminar</a>        
             </form>
         </div>
     </section>
