@@ -23,7 +23,8 @@
 			</div>
 			<div class="formulario">
 				<h2>Entra a tu cuenta.</h2>
-				<p>Ingresa tus datos para acceder.</p>
+				<p>Ingresa tus datos para acceder.</p>				
+				<form method="POST" name="frmlogin" id="frmlogin" action="./user/index.html">
 				<form action="./user/index.html" method="POST" name="frmlogin" id="frmlogin">
 					<!--#-->
 					<div class="input-group">
@@ -36,7 +37,7 @@
 					</div>
 					<div class="input-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
-						<input type="Password" name="password" placeholder="Contraseña..." required="">
+						<input type="Password" name="password" placeholder="Contraseña..." required="" id="txtContra">
 					</div> 		
 					<div class="input-group">
 						<span class="fa fa-envelope" aria-hidden="true"></span>
@@ -66,10 +67,13 @@
 					<label for="">Fecha de cumpleaños</label>
 					<div class="input-group">
 						<span aria-hidden="true"></span>
+						<input type="date" name="usuario" placeholder="Fecha de cumpleaños" required=""> 
+					</div>							         
 						<input type="date" name="usuario" placeholder="Número de telefono" required=""> 
 					</div>	
 						<button type="submit" name="btnSend" class="btn btn-danger btn-block" id="btnSend" value="Entrar"></button>         
 				</form>
+				
 			</div>
 		</div>
 
