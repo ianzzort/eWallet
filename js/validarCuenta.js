@@ -11,11 +11,26 @@ function iniciar(){
 		btnenviar.addEventListener("click", function(){
 			errores="";
 			//Validaciones (Función)
+<<<<<<< HEAD
 			if (validarCantidad(cantidad.value) == 0 || validarCuenta(acc.value) == 0) {
 				document.getElementById("error").innerHTML = "<p>"+ errores + "</p>";
 			}else{
 				guardarDatos(cantidad.value, bank.value, acc.value);
 				form.submit();
+=======
+<<<<<<< HEAD
+			if (validarCantidad(cantidad.value) == 0 || validarCuenta(acc.value) == 0) {
+				document.getElementById("error").innerHTML = "<p>"+ errores + "</p>";
+			}else{
+				guardarDatos(cantidad.value, bank.value, acc.value);
+				form.submit();
+=======
+			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
+				location.replace("./");
+			}else{
+				location.replace("./panel.html");
+>>>>>>> b1f1485734bab3c2b362d459e8106094fedda717
+>>>>>>> 4219eab26d313f79757fae721ca8c5dd37e66e6e
 			}
 		}, false);
 	}
@@ -23,11 +38,26 @@ function iniciar(){
 		btnenviar.attachEvent("onclick", function(){
 			errores="";
 			//Validaciones (Función)
+<<<<<<< HEAD
 			if (validarCantidad(cantidad.value) == 0 || validarCuenta(acc.value) == 0) {
 				document.getElementById("error").innerHTML = "<br><p>"+ errores + "</p>";
 			}else{
 				guardarDatos(cantidad.value, bank.value, acc.value);
 				form.submit();
+=======
+<<<<<<< HEAD
+			if (validarCantidad(cantidad.value) == 0 || validarCuenta(acc.value) == 0) {
+				document.getElementById("error").innerHTML = "<br><p>"+ errores + "</p>";
+			}else{
+				guardarDatos(cantidad.value, bank.value, acc.value);
+				form.submit();
+=======
+			if (validarCantidad(document.frmdatos.txtCantidad.value) == 0 || validarCuenta(document.frmdatos.txtCuenta.value) == 0) {
+				location.replace("./");
+			}else{
+				location.replace("./panel.html");
+>>>>>>> b1f1485734bab3c2b362d459e8106094fedda717
+>>>>>>> 4219eab26d313f79757fae721ca8c5dd37e66e6e
 			}
 		});
 	}
@@ -115,8 +145,20 @@ if (window.addEventListener) {
     }, false);
 }
 else if (window.attachEvent) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4219eab26d313f79757fae721ca8c5dd37e66e6e
     window.attachEvent("onload", function(){
     	mostrarDatos();
     	iniciar();
     });
+<<<<<<< HEAD
 }
+=======
+}
+=======
+    window.attachEvent("onload", iniciar);
+}
+>>>>>>> b1f1485734bab3c2b362d459e8106094fedda717
+>>>>>>> 4219eab26d313f79757fae721ca8c5dd37e66e6e
