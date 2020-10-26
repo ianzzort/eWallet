@@ -659,6 +659,7 @@ section .center {
 	line-height: 50px;
 }
 
+
 @media screen and (max-width:800px) {
 	.letras {
 		display: none;
