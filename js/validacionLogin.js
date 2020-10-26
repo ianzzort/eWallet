@@ -14,6 +14,7 @@ function iniciar(){
 	if(btnenviar.addEventListener){
 		btnenviar.addEventListener("click", function(){
 			//Validaciones (Función)
+<<<<<<< HEAD
 			errores = "";
 			if (validarNombre(name.value) == 0 || validarNombre(apell.value) == 0 ||
 				validarCorreo(email.value) == 0 || validarDui(dui.value) == 0 ||
@@ -22,12 +23,21 @@ function iniciar(){
 			}else{
 				guardarDatos(name.value, apell.vallue, contra.value, email.value, dui.value, nit.value, phone.value);
 				form.submit();
+=======
+			if (validarNombre(document.frmlogin.txtNombre.value) == 0 || validarNombre(document.frmlogin.txtApellido.value) == 0 ||
+				validarCorreo(document.frmlogin.txtCorreo.value) == 0 || validarDui(document.frmlogin.txtDui.value) == 0 ||
+				validarNit(document.frmlogin.txtNit.value) == 0 || validarTelefono(document.frmlogin.txtTelefono.value) == 0 ) {
+				location.replace("./");
+			}else{
+				location.replace("./user/index.html");
+>>>>>>> b1f1485734bab3c2b362d459e8106094fedda717
 			}
 		}, false);
 	}
 	else{
 		btnenviar.attachEvent("onclick", function(){
 			//Validaciones (Función)
+<<<<<<< HEAD
 			if (validarNombre(name.value) == 0 || validarNombre(apell.value) == 0 ||
 				validarCorreo(email.value) == 0 || validarDui(dui.value) == 0 ||
 				validarNit(nit.value) == 0 || validarTelefono(phone.value) == 0 ) {
@@ -35,6 +45,14 @@ function iniciar(){
 			}else{
 				guardarDatos(name.value, apell.vallue, contra.value, email.value, dui.value, nit.value, phone.value);
 				form.submit();
+=======
+			if (validarNombre(document.frmlogin.txtNombre.value) == 0 || validarNombre(document.frmlogin.txtApellido.value) == 0 ||
+				validarCorreo(document.frmlogin.txtCorreo.value) == 0 || validarDui(document.frmlogin.txtDui.value) == 0 ||
+				validarNit(document.frmlogin.txtNit.value) == 0 || validarTelefono(document.frmlogin.txtTelefono.value) == 0 ) {
+				location.replace("./");
+			}else{
+				location.replace("./user/index.html");
+>>>>>>> b1f1485734bab3c2b362d459e8106094fedda717
 			}
 		});
 	}
